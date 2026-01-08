@@ -1,0 +1,23 @@
+@model TurismoApp.Models.PontoTuristico
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes do Ponto Turístico</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Nome</dt>
+        <dd class="col-sm-10">@Model.Nome</dd>
+        
+        <dt class="col-sm-2">Descrição</dt>
+        <dd class="col-sm-10">@Model.Descricao</dd>
+        
+        <dt class="col-sm-2">Cidade/Estado</dt>
+        <dd class="col-sm-10">@Model.Cidade - @Model.Estado</dd>
+    </dl>
+    <a asp-action="Index" class="btn btn-secondary">Voltar para a lista</a>
+ </div>
+
